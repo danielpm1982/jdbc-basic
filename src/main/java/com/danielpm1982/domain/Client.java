@@ -4,31 +4,31 @@ public class Client implements Comparable<Client>{
     private int clientId;
     private String name;
     private Address address;
-    public Client(int clientId, String name, Address address) {
+    public Client(int clientId, String name, Address address){
         this.clientId = clientId;
         this.name = name;
         this.address = address;
     }
-    public int getClientId() {
+    public int getClientId(){
         return clientId;
     }
-    public void setClientId(int clientId) {
+    public void setClientId(int clientId){
         this.clientId = clientId;
     }
-    public String getName() {
+    public String getName(){
         return name;
     }
-    public void setName(String name) {
+    public void setName(String name){
         this.name = name;
     }
-    public Address getAddress() {
+    public Address getAddress(){
         return address;
     }
-    public void setAddress(Address address) {
+    public void setAddress(Address address){
         this.address = address;
     }
     @Override
-    public String toString() {
+    public String toString(){
         return "Client{" +
                 "clientId=" + clientId +
                 ", name='" + name + '\'' +
@@ -36,7 +36,7 @@ public class Client implements Comparable<Client>{
                 '}';
     }
     @Override
-    public int compareTo(Client client) {
+    public int compareTo(Client client){
         if(this.clientId==client.clientId){
             return 0;
         } else if(this.clientId>clientId){

@@ -2,9 +2,8 @@ package com.danielpm1982.dao;
 import com.danielpm1982.domain.Address;
 import com.danielpm1982.domain.Client;
 import java.sql.*;
-import java.util.function.Consumer;
 
-public class DAO {
+public class DAO{
     final static String DB_URL = "jdbc:mysql://localhost:3306/clientDB";
     final static String USER = "root";
     final static String PASSWORD = "root";
@@ -12,8 +11,8 @@ public class DAO {
     final static String T2 = "TRUNCATE TABLE address";
     final static String Q1 = "SELECT * FROM client c JOIN address a ON c.address_fk=a.address_id";
     final static String Q2 = "SELECT * FROM (SELECT * FROM client c JOIN address a ON c.address_fk=a.address_id) r WHERE r.name LIKE ? ORDER BY name ASC";
-    final static String Q3 = "SELECT * FROM client c where c.client_id=?";
-    final static String Q4 = "SELECT * FROM address a where a.address_id=?";
+    final static String Q3 = "SELECT * FROM client c WHERE c.client_id=?";
+    final static String Q4 = "SELECT * FROM address a WHERE a.address_id=?";
     final static String I1 = "INSERT INTO client(client_id, name, address_fk) VALUES (?, ?, ?)";
     final static String I2 = "INSERT INTO address(address_id, street, number, city, state, country) VALUES (?, ?, ?, ?, ?, ?)";
     final static String D1 = "DELETE FROM client c WHERE c.client_id=?";

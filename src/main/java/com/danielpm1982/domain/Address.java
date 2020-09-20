@@ -1,13 +1,13 @@
 package com.danielpm1982.domain;
 
-public class Address {
+public class Address{
     private int addressId;
     private String street;
     private int number;
     private String city;
     private String state;
     private String country;
-    public Address(int addressId, String street, int number, String city, String state, String country) {
+    public Address(int addressId, String street, int number, String city, String state, String country){
         this.addressId = addressId;
         this.street = street;
         this.number = number;
@@ -15,44 +15,44 @@ public class Address {
         this.state = state;
         this.country = country;
     }
-    public int getAddressId() {
+    public int getAddressId(){
         return addressId;
     }
-    public void setAddressId(int addressId) {
+    public void setAddressId(int addressId){
         this.addressId = addressId;
     }
-    public String getStreet() {
+    public String getStreet(){
         return street;
     }
-    public void setStreet(String street) {
+    public void setStreet(String street){
         this.street = street;
     }
-    public int getNumber() {
+    public int getNumber(){
         return number;
     }
-    public void setNumber(int number) {
+    public void setNumber(int number){
         this.number = number;
     }
-    public String getCity() {
+    public String getCity(){
         return city;
     }
-    public void setCity(String city) {
+    public void setCity(String city){
         this.city = city;
     }
-    public String getState() {
+    public String getState(){
         return state;
     }
-    public void setState(String state) {
+    public void setState(String state){
         this.state = state;
     }
-    public String getCountry() {
+    public String getCountry(){
         return country;
     }
-    public void setCountry(String country) {
+    public void setCountry(String country){
         this.country = country;
     }
     @Override
-    public String toString() {
+    public String toString(){
         return "Address{" +
                 "addressId=" + addressId +
                 ", street='" + street + '\'' +

@@ -6,10 +6,10 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.*;
 
-public class Main {
+public class Main{
     private static Connection conn;
     private static Set<Client> clientSet;
-    public static void main(String[] args) {
+    public static void main(String[] args){
         System.out.println("\nConnecting to Database...");
         conn = DAO.connect();
         System.out.println("Connected !");
